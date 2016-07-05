@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="prachi manchanda">
+	<meta name="description" content="Portfolio website">
+
+	<link rel="shortcut icon" href="images/icon.png">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src ="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src ="js/bootstrap.min.js"></script>
+	
+	<title>Portfolio Site</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<header>
+				<div class="col-md-6 col-sm-4 col-xs-4">
+					<img class="img-circular" src="images/prachimanchanda.jpg" alt="Portfolio Site Logo">
+				</div>
+
+				<div class="col-md-6 col-sm-8 col-sm-8 text-right text-uppercase">
+					<h1>Prachi Manchanda</h1>
+					<h4>CS Undergrad at NSIT</h4>
+				</div>
+			</header>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+			<hr>
+				<img class="portfolio-img img-responsive" src="images/desk.jpg" alt="About" data-toggle="modal" data-target=".about-modal">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<hr>
+				<h1>Projects</h1>
+			</div>
+			</div>
+			<div class="row text-center">
+			<div class="col-md-4 col-sm-4">
+				<img class="portfolio-img img-responsive" src="images/starbot.png" alt="StarBot" data-toggle="modal" data-target=".starbot-modal">
+				<h3>StarBot</h3>
+				<p><a href="https://github.com/prachi1210/starbot">Source Code</a></p>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<img class="portfolio-img img-responsive" src="images/profanity.jpg" alt="Profanity Checker" data-toggle="modal" data-target=".profanity-checker-modal">
+				<h3>Profanity Checker</h3>
+				<p><a href="https://github.com/prachi1210/profanity-checker">Source Code</a></p>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<img class="portfolio-img img-responsive" src="images/airplane.png" alt="Air Travel Tracker" data-toggle="modal" data-target=".air-travel-tracker-modal">
+				<h3>Air Travel Tracker</h3>
+				<p><a href="https://github.com/prachi1210/air-travel-tracker">Source Code</a></p>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<hr>
+			<p class="text-muted text-center">You can view my complete resume <a href="https://drive.google.com/open?id=0B2SeQ8DFGDLVOGpRM095STBpbWM">here.</a></p>
+		</div>
+	</footer>
+
+<!-- About Modal -->
+<div class="modal fade about-modal" tabindex="-1" role="dialog" aria-labelledby="aboutModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">About</h4>
+      </div>
+      <div class="modal-body">
+		<p><b>'The best way to have good ideas is to have a lot of ideas.'</b></p>
+        <p>Hi, My name is Prachi Manchanda. I am currently a CS undergrad at <a href="http://www.nsit.ac.in">Netaji Subhas Institute of Technology.</a></p>
+		<p>I get excited about ideas and am pursuing a Full Stack Web Development Nanodegree from Udacity to able to bring those ideas to life. I am also an active contributor to open-source projects at  <a href="https://github.com/prachi1210">GitHub.</a></p>
+		<p>You can view my complete resume <a href="https://drive.google.com/open?id=0B2SeQ8DFGDLVOGpRM095STBpbWM">here.</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- StarBot Modal -->
+<div class="modal fade starbot-modal" tabindex="-1" role="dialog" aria-labelledby="starbotModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">StarBot</h4>
+      </div>
+      <div class="modal-body">
+		    <p><b>Overview:</b> A GitHub hack to get as many stars on your respository as you want.</p>
+				<p>This project was featured in the Trending Repositories on GitHub.</p>
+				<p><a href="https://github.com/prachi1210/starbot">Source Code</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Profanity Checker modal -->
+<div class="modal fade profanity-checker-modal" tabindex="-1" role="dialog" aria-labelledby="profanityCheckerModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Profanity Checker</h4>
+      </div>
+      <div class="modal-body">
+	      <p>
+		      <b>Overview:</b>
+
+					Profanity Checker is a simple PHP application that scans large blocks of text to prevent you from using NSFW words.
+
+					Input could be either in the form of a .txt file or raw text.
+
+					Inspired from the What Do You Love Project by Google (this has now been depreciated), it enables you to perform checks across several modes including the ones deemed not fit by Google originally!
+
+					<b>Modes</b>
+					<ul>
+						<li><u>Standard Mode:</u> This mode checks against the WDYL words</li>
+						<li><u>Create Custom Check:</u> Allows user to create a custom database of words that the user may deem inappropriate to avoid entering same set of words again and again.
+						<li><u>Selective Check:</u> Allows user to check for a particular set of words for exactly one instance. The words are NOT stored in a database.
+					</ul>
+				</p>
+				<p><a href="https://github.com/prachi1210/profanity-checker">Source Code</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Air Travel Tracker Modal -->
+<div class="modal fade air-travel-tracker-modal" tabindex="-1" role="dialog" aria-labelledby="airTravelTrackerModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Air Travel Tracker</h4>
+      </div>
+      <div class="modal-body">
+				<p>
+					<b>Overview:</b>
+					Java Applet built in Processing using the Unfolding Maps library.
+
+				</p>
+		    <p>Air Travel Tracker is an interactive map (with basic interactions such as zoom and pan) with geopositioned markers for displaying airport data on the map. Each aiport is marked with a small icon. All airports are put in a hashmap with OpenFlights unique id for key.</p>
+				<p><a href="https://github.com/prachi1210/air-travel-tracker">Source Code</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
