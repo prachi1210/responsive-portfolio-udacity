@@ -1,6 +1,3 @@
 ##Responsive Portfolio Website
-Website to showcase my projects.
 
-####Screenshots:
-![](images/screenshots/home.png?raw=true)
-![](images/screenshots/projects.png?raw=true)
+This project was undertaken under the Udacity Full Stack Nanodegree Program,
